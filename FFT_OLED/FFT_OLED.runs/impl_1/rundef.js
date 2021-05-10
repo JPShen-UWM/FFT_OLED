@@ -23,9 +23,9 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "init_design", "begin" );
+ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
-         "-log OLED_test_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source OLED_test_wrapper.tcl -notrace" );
+         "-log oledCtrl_test.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source oledCtrl_test.tcl -notrace" );
 
 
 

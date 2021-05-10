@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/Xilinx/Project/FFT_OLED/FFT_OLED/FFT_OLED.runs/impl_1'
+HD_PWD='F:/Xilinx/Project/FFT_OLED/FFT_OLED.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
-EAStep vivado -log OLED_test_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source OLED_test_wrapper.tcl -notrace
+/bin/touch .write_bitstream.begin.rst
+EAStep vivado -log oledCtrl_test.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source oledCtrl_test.tcl -notrace
 
 

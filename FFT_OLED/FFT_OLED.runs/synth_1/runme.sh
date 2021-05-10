@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='F:/Xilinx/Project/FFT_OLED/FFT_OLED/FFT_OLED.runs/synth_1'
+HD_PWD='F:/Xilinx/Project/FFT_OLED/FFT_OLED.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log OLED_test_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source OLED_test_wrapper.tcl
+EAStep vivado -log oledCtrl_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source oledCtrl_test.tcl
