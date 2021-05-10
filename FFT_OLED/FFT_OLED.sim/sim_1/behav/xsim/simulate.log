@@ -1,4 +1,7 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
+<<<<<<< 646da2cf1faef1427dfaedfeca3ef2991c497034
 $stop called at time : 145 ns : File "F:/Xilinx/Project/FFT_OLED/FFT_OLED/FFT_OLED.srcs/sim_1/new/debouncer_tb.sv" Line 55
 $stop called at time : 145 ns : File "F:/Xilinx/Project/FFT_OLED/FFT_OLED/FFT_OLED.srcs/sim_1/new/debouncer_tb.sv" Line 55
+=======
+>>>>>>> OLED ctrl

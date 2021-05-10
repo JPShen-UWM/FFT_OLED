@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../FFT_OLED.srcs/sources_1/new/oledCtrl_test.v" \
+
+sv xil_defaultlib  \
+"../../../../FFT_OLED.srcs/sources_1/new/SPI_ctrl.sv" \
+"../../../../FFT_OLED.srcs/sources_1/new/debouncer.sv" \
+"../../../../FFT_OLED.srcs/sources_1/new/delay100ms.sv" \
+"../../../../FFT_OLED.srcs/sources_1/new/oledCtrl.sv" \
+
+verilog xil_defaultlib  \
+"../../../../FFT_OLED.srcs/sim_1/new/oledCtrl_test_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"OLED_test": {
+			"proto_instances": {
+			}
+		}
+	}
+}

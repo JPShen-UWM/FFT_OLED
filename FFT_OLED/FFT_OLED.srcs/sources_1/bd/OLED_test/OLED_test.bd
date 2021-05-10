@@ -1,0 +1,212 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9A58765D8187A436",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../FFT_OLED.gen/sources_1/bd/OLED_test",
+      "name": "OLED_test",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "oledCtrl_test_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "OLED_test_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "A": {
+        "direction": "I"
+      },
+      "oled_SCLK": {
+        "direction": "O"
+      },
+      "oled_SDIN": {
+        "direction": "O"
+      },
+      "oled_vdd": {
+        "direction": "O"
+      },
+      "oled_vbat": {
+        "direction": "O"
+      },
+      "oled_rst_n": {
+        "type": "rst",
+        "direction": "O",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "oled_dc": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "oledCtrl_test_0": {
+        "vlnv": "xilinx.com:module_ref:oledCtrl_test:1.0",
+        "xci_name": "OLED_test_oledCtrl_test_0_0",
+        "xci_path": "ip\\OLED_test_oledCtrl_test_0_0\\OLED_test_oledCtrl_test_0_0.xci",
+        "inst_hier_path": "oledCtrl_test_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "oledCtrl_test",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "OLED_test_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "A": {
+            "direction": "I"
+          },
+          "oled_SCLK": {
+            "direction": "O"
+          },
+          "oled_SDIN": {
+            "direction": "O"
+          },
+          "oled_vdd": {
+            "direction": "O"
+          },
+          "oled_vbat": {
+            "direction": "O"
+          },
+          "oled_rst_n": {
+            "type": "rst",
+            "direction": "O",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "oled_dc_n": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "oledCtrl_test_0/clk"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "oledCtrl_test_0/rst"
+        ]
+      },
+      "A_0_1": {
+        "ports": [
+          "A",
+          "oledCtrl_test_0/A"
+        ]
+      },
+      "oledCtrl_test_0_oled_SCLK": {
+        "ports": [
+          "oledCtrl_test_0/oled_SCLK",
+          "oled_SCLK"
+        ]
+      },
+      "oledCtrl_test_0_oled_SDIN": {
+        "ports": [
+          "oledCtrl_test_0/oled_SDIN",
+          "oled_SDIN"
+        ]
+      },
+      "oledCtrl_test_0_oled_vdd": {
+        "ports": [
+          "oledCtrl_test_0/oled_vdd",
+          "oled_vdd"
+        ]
+      },
+      "oledCtrl_test_0_oled_vbat": {
+        "ports": [
+          "oledCtrl_test_0/oled_vbat",
+          "oled_vbat"
+        ]
+      },
+      "oledCtrl_test_0_oled_rst_n": {
+        "ports": [
+          "oledCtrl_test_0/oled_rst_n",
+          "oled_rst_n"
+        ]
+      },
+      "oledCtrl_test_0_oled_dc_n": {
+        "ports": [
+          "oledCtrl_test_0/oled_dc_n",
+          "oled_dc"
+        ]
+      }
+    }
+  }
+}
